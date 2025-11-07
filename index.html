@@ -3,63 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Mensaje Especial!</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            background-color: #ffffff;
-            border: 5px solid #ff4136; /* Un borde llamativo y de color "alerta" */
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        h1 {
-            color: #ff4136; /* Rojo para el mensaje principal */
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.5em;
-            color: #444;
-            line-height: 1.4;
-            font-weight: bold;
-        }
-
-        .nota {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #999;
-        }
-    </style>
+    <title>Tu Voz, Tu Historia - Portafolio de Voice Over y Creador de Contenido</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Iconos (por ejemplo, Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¡Bienvenido!</h1>
-        <p>
-            Felicidades, eres el primero en la lista de los chismosos. 
-            <br><br>
-            <strong>¡Deja el chisme y ponte a trabajar!</strong>
-        </p>
-        <div class="nota">
-            (Este es un mensaje de broma, pero el trabajo es real. 😉)
+
+    <!-- Header / Navegación (opcional, podrías tener una nav sticky) -->
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Tu Voz</a>
+                <ul>
+                    <li><a href="#voice-over">Voice Over</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- Sección 1: Hero (Pantalla Principal) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-video">
+            <!-- Puedes usar un video de fondo local o de YouTube/Vimeo -->
+            <!-- <video autoplay muted loop playsinline src="your-background-video.mp4"></video> -->
+            <!-- O una imagen de fondo -->
+            <img src="hero-background.jpg" alt="Voice Over y Creación de Contenido">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Tu Voz, Tu Historia. Contenido que Conecta.</h1>
+            <p class="hero-subtitle">Dando vida a tus ideas con la magia del voice over y la creatividad que tu marca necesita.</p>
+            <div class="hero-buttons">
+                <a href="#voice-over" class="btn btn-primary">Escucha mi Demo de Voz</a>
+                <a href="#contenido" class="btn btn-secondary">Explora mi Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: ¿Quién Soy? -->
+    <section id="about" class="about-section container">
+        <div class="about-image">
+            <img src="your-profile-picture.jpg" alt="Tu Perfil Profesional">
+        </div>
+        <div class="about-text">
+            <h2>Tu Aliado Creativo</h2>
+            <p>Con años de experiencia fusionando la potencia de la voz con estrategias de contenido innovadoras, me dedico a transformar tus mensajes en experiencias auditivas y visuales memorables. Mi pasión es la comunicación efectiva, ya sea narrando una historia cautivadora, produciendo un spot publicitario impactante o desarrollando una campaña digital completa.</p>
+            <p>Desde el concepto inicial hasta la entrega final, mi compromiso es brindarte soluciones creativas que no solo suenen y se vean bien, sino que también resuenen con tu audiencia y generen resultados tangibles.</p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Voice Over - Dale Voz a tus Proyectos -->
+    <section id="voice-over" class="voice-over-section">
+        <div class="container">
+            <h2>Mi Voz en Acción</h2>
+            <p class="section-subtitle">Escucha mi versatilidad y el impacto que puedo generar para tu marca.</p>
+
+            <div class="voice-demos">
+                <div class="audio-player">
+                    <!-- Aquí iría el reproductor de audio JS, por ahora un placeholder -->
+                    <audio controls src="demo-comercial.mp3" class="main-audio-player"></audio>
+                </div>
+                <div class="demo-list">
+                    <div class="demo-item active" data-src="demo-comercial.mp3">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Comercial</span>
+                    </div>
+                    <div class="demo-item" data-src="demo-narracion.mp3">
+                        <i class="fas fa-book-open"></i>
+                        <span>Narración</span>
+                    </div>
+                    <div class="demo-item" data-src="demo-corporativo.mp3">
+                        <i class="fas fa-building"></i>
+                        <span>Corporativo</span>
+                    </div>
+                    <div class="demo-item" data-src="demo-personajes.mp3">
+                        <i class="fas fa-mask"></i>
+                        <span>Personajes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="voice-services">
+                <h3>Servicios de Voice Over:</h3>
+                <ul>
+                    <li><i class="fas fa-microphone-alt"></i> Comerciales de TV/Radio</li>
+                    <li><i class="fas fa-headphones"></i> E-learning y Audiolibros</li>
+                    <li><i class="fas fa-film"></i> Videos Corporativos e Institucionales</li>
+                    <li><i class="fas fa-comments"></i> Doblaje y Caracterización</li>
+                    <li><i class="fas fa-podcast"></i> Podcasts e Intros/Outros</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Creación de Contenido - Ideas que Dejan Huella -->
+    <section id="contenido" class="content-creation-section">
+        <div class="container">
+            <h2>Contenido que Resuena</h2>
+            <p class="section-subtitle">Transformando conceptos en experiencias memorables. Desde el guion hasta el diseño final.</p>
+
+            <div class="tabs">
+                <button class="tab-button active" data-tab="videos">Videos de Campañas</button>
+                <button class="tab-button" data-tab="textos">Textos Creativos</button>
+                <button class="tab-button" data-tab="diseno">Diseño Gráfico</button>
+            </div>
+
+            <div id="videos" class="tab-content active">
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                        <h4>Campaña "Café Amanecer"</h4>
+                        <p>Cliente: Amanecer Café. Mi Rol: Voice Over & Campaña digital.</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                        <h4>Spot Publicitario "EcoWash"</h4>
+                        <p>Cliente: Productos Limpios. Mi Rol: Voice Over & Voz Anuncio TV.</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                        <h4>Video Institucional "Futuro Digital"</h4>
+                        <p>Cliente: Tech Solutions. Mi Rol: Creativo & Voz Video Corporativo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="textos" class="tab-content">
+                <div class="text-carousel">
+                    <div class="text-card">
+                        <h3>Guion para Radio: "Conéctate con el Mañana"</h3>
+                        <p>"Voz (optimista): ¿Cansado de la rutina? Descubre Viajes X, tu portal a destinos increíbles. ¡Aventura y relax a un click! Visítanos en viajesx.com."</p>
+                        <button class="read-more">Leer más</button>
+                    </div>
+                    <div class="text-card">
+                        <h3>Copy para Redes: "Sabor en Cada Gota"</h3>
+                        <p>"¡Mañanas perfectas comienzan con nuestro café premium! ☕ Despierta tus sentidos. #CafeArtesanal #BuenosDias"</p>
+                        <button class="read-more">Leer más</button>
+                    </div>
+                    <div class="text-card">
+                        <h3>Artículo Blog: "El Poder del Storytelling en Marcas"</h3>
+                        <p>"En un mundo saturado de información, contar historias auténticas es la clave para conectar emocionalmente con tu audiencia..."</p>
+                        <button class="read-more">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="diseno" class="tab-content">
+                <div class="design-grid">
+                    <div class="design-item">
+                        <img src="design-logo-example.jpg" alt="Diseño de Logo">
+                        <h4>Branding: Logo "ZenFlow Yoga"</h4>
+                    </div>
+                    <div class="design-item">
+                        <img src="design-social-media.jpg" alt="Diseño Redes Sociales">
+                        <h4>Campaña Gráfica para Redes</h4>
+                    </div>
+                    <div class="design-item">
+                        <img src="design-web-mockup.jpg" alt="Diseño Web">
+                        <h4>Mockup Web para E-commerce</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5: Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Lo que dicen mis clientes</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <p>"Su voz le dio un profesionalismo increíble a nuestro video corporativo. ¡Totalmente recomendado!"</p>
+                    <span>— Ana García, Gerente de Marketing en InnovaTech</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"La creatividad de su equipo para nuestra campaña fue excepcional. Superaron nuestras expectativas."</p>
+                    <span>— Carlos Ruiz, Director Creativo en Publicidad Éxito</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"El diseño gráfico que nos entregó para nuestras redes sociales fue moderno y muy atractivo. ¡Gran trabajo!"</p>
+                    <span>— María López, Emprendedora "Dulce Tentación"</span>
+                </div>
+            </div>
+            <!-- Botones para carrusel de testimonios (implementar con JS) -->
+            <div class="carousel-nav">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 6: ¡Trabajemos Juntos! (Call to Action Final) -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>¿Listo para darle vida a tu proyecto?</h2>
+            <p class="section-subtitle">Conversemos sobre tus ideas y cómo puedo ayudarte a alcanzar tus objetivos.</p>
+
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- Añade más redes sociales si tienes -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
